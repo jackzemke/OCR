@@ -156,8 +156,6 @@ def segment_words(line_image, min_word_width=10, gap_threshold=5):
 
     return words, word_indices
 
-import matplotlib.pyplot as plt
-
 def plot_vertical_projection(line_image):
     vertical_projection = np.sum(line_image == 255, axis=0)
     plt.plot(vertical_projection)
